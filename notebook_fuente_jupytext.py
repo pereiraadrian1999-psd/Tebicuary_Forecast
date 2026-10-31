@@ -24,6 +24,7 @@
 
 # %%
 import warnings, os, glob
+warnings.filterwarnings('ignore')
 from itertools import compress
 import numpy as np
 import pandas as pd
@@ -43,7 +44,6 @@ from sklearn.model_selection import TimeSeriesSplit, RandomizedSearchCV
 from lightgbm import LGBMRegressor
 from xgboost import XGBRegressor
 
-warnings.filterwarnings('ignore')
 pd.set_option('display.width', 160)
 SEED = 42
 np.random.seed(SEED)

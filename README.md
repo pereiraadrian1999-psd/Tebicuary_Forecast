@@ -3,7 +3,7 @@
 Proyecto Final Integrador (M7) · Diplomado en Machine Learning y Deep Learning Aplicado · FIUNA 2026 · Ing. Jorge Adrián Pereira Oviedo
 
 Repositorio: https://github.com/pereiraadrian1999-psd/Tebicuary_Forecast  
-Video: https://youtu.be/XXXXXXXX (completar)
+Video: https://studio.youtube.com/video/_cwuALhykE0/edit
 
 ## Problema
 

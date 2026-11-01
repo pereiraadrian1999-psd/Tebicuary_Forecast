@@ -1,0 +1,1326 @@
+{
+ "faltantes": {
+  "dias_alguna_faltante": 0.879053606882859,
+  "Pmed_anual_A": 1668.0575729973884,
+  "Pmed_anual_B": 1564.5346619442814,
+  "dif_diaria_max": 64.25750885402853,
+  "anio_max_dif": 1981,
+  "dif_anual_max": 903.0934026507
+ },
+ "metricas_finales": {
+  "1": {
+   "NSE": 0.9956,
+   "KGE": 0.9972,
+   "Skill_pers": 0.4637,
+   "RMSE": 22.2572,
+   "RMSE_alto": 53.8999,
+   "PBIAS_alto": -0.4586,
+   "NSE_pers": 0.9918,
+   "RMSE_alto_pers": 69.3908
+  },
+  "3": {
+   "NSE": 0.9761,
+   "KGE": 0.9833,
+   "Skill_pers": 0.5428,
+   "RMSE": 51.9671,
+   "RMSE_alto": 120.123,
+   "PBIAS_alto": -2.1541,
+   "NSE_pers": 0.9477,
+   "RMSE_alto_pers": 172.4009
+  },
+  "5": {
+   "NSE": 0.9462,
+   "KGE": 0.9634,
+   "Skill_pers": 0.5586,
+   "RMSE": 77.8886,
+   "RMSE_alto": 172.5284,
+   "PBIAS_alto": -4.0368,
+   "NSE_pers": 0.8782,
+   "RMSE_alto_pers": 261.9167
+  }
+ },
+ "alcance": {
+  "umbrales_permanencia": {
+   "2": 1179.7991,
+   "5": 993.2235,
+   "10": 823.3578,
+   "25": 500.2288,
+   "50": 263.0718,
+   "75": 112.1702
+  },
+  "max_test": 1788.0797,
+  "error_por_tramo": {
+   "1": [
+    {
+     "tramo": "> 1 180 (< 2 %)",
+     "dias": 120.0,
+     "error_tipico_pct": 1.76,
+     "dentro_20pct": 99.17,
+     "sesgo_pct": -0.53
+    },
+    {
+     "tramo": "993–1 180 (2–5 %)",
+     "dias": 106.0,
+     "error_tipico_pct": 1.19,
+     "dentro_20pct": 100.0,
+     "sesgo_pct": -0.1
+    },
+    {
+     "tramo": "823–993 (5–10 %)",
+     "dias": 124.0,
+     "error_tipico_pct": 1.95,
+     "dentro_20pct": 98.39,
+     "sesgo_pct": -0.72
+    },
+    {
+     "tramo": "500–823 (10–25 %)",
+     "dias": 505.0,
+     "error_tipico_pct": 1.43,
+     "dentro_20pct": 99.6,
+     "sesgo_pct": 0.32
+    },
+    {
+     "tramo": "263–500 (25–50 %)",
+     "dias": 549.0,
+     "error_tipico_pct": 1.73,
+     "dentro_20pct": 98.91,
+     "sesgo_pct": 0.54
+    },
+    {
+     "tramo": "112–263 (50–75 %)",
+     "dias": 831.0,
+     "error_tipico_pct": 2.61,
+     "dentro_20pct": 96.87,
+     "sesgo_pct": 0.45
+    },
+    {
+     "tramo": "< 112 (superado > 75 % del tiempo)",
+     "dias": 1420.0,
+     "error_tipico_pct": 4.46,
+     "dentro_20pct": 90.56,
+     "sesgo_pct": 0.35
+    }
+   ],
+   "3": [
+    {
+     "tramo": "> 1 180 (< 2 %)",
+     "dias": 120.0,
+     "error_tipico_pct": 6.0,
+     "dentro_20pct": 90.83,
+     "sesgo_pct": -3.39
+    },
+    {
+     "tramo": "993–1 180 (2–5 %)",
+     "dias": 104.0,
+     "error_tipico_pct": 3.73,
+     "dentro_20pct": 97.12,
+     "sesgo_pct": -1.07
+    },
+    {
+     "tramo": "823–993 (5–10 %)",
+     "dias": 124.0,
+     "error_tipico_pct": 4.44,
+     "dentro_20pct": 94.35,
+     "sesgo_pct": -1.45
+    },
+    {
+     "tramo": "500–823 (10–25 %)",
+     "dias": 505.0,
+     "error_tipico_pct": 4.91,
+     "dentro_20pct": 96.44,
+     "sesgo_pct": 0.14
+    },
+    {
+     "tramo": "263–500 (25–50 %)",
+     "dias": 548.0,
+     "error_tipico_pct": 5.75,
+     "dentro_20pct": 89.05,
+     "sesgo_pct": 1.38
+    },
+    {
+     "tramo": "112–263 (50–75 %)",
+     "dias": 828.0,
+     "error_tipico_pct": 9.19,
+     "dentro_20pct": 76.21,
+     "sesgo_pct": 1.41
+    },
+    {
+     "tramo": "< 112 (superado > 75 % del tiempo)",
+     "dias": 1415.0,
+     "error_tipico_pct": 15.48,
+     "dentro_20pct": 58.87,
+     "sesgo_pct": 3.98
+    }
+   ],
+   "5": [
+    {
+     "tramo": "> 1 180 (< 2 %)",
+     "dias": 120.0,
+     "error_tipico_pct": 10.04,
+     "dentro_20pct": 77.5,
+     "sesgo_pct": -7.4
+    },
+    {
+     "tramo": "993–1 180 (2–5 %)",
+     "dias": 102.0,
+     "error_tipico_pct": 6.67,
+     "dentro_20pct": 87.25,
+     "sesgo_pct": -2.39
+    },
+    {
+     "tramo": "823–993 (5–10 %)",
+     "dias": 124.0,
+     "error_tipico_pct": 8.74,
+     "dentro_20pct": 90.32,
+     "sesgo_pct": -0.78
+    },
+    {
+     "tramo": "500–823 (10–25 %)",
+     "dias": 505.0,
+     "error_tipico_pct": 9.04,
+     "dentro_20pct": 85.94,
+     "sesgo_pct": -0.8
+    },
+    {
+     "tramo": "263–500 (25–50 %)",
+     "dias": 548.0,
+     "error_tipico_pct": 11.68,
+     "dentro_20pct": 73.36,
+     "sesgo_pct": 0.12
+    },
+    {
+     "tramo": "112–263 (50–75 %)",
+     "dias": 824.0,
+     "error_tipico_pct": 16.23,
+     "dentro_20pct": 57.77,
+     "sesgo_pct": 3.66
+    },
+    {
+     "tramo": "< 112 (superado > 75 % del tiempo)",
+     "dias": 1411.0,
+     "error_tipico_pct": 25.09,
+     "dentro_20pct": 42.03,
+     "sesgo_pct": 11.29
+    }
+   ]
+  },
+  "estado_h3": {
+   "Río estable o bajando": {
+    "dias": 2597.0,
+    "error_tipico_pct": 7.06,
+    "dentro_20pct": 79.63,
+    "sesgo_pct": 3.91
+   },
+   "Río subiendo (> 10 % en 3 días)": {
+    "dias": 1047.0,
+    "error_tipico_pct": 12.55,
+    "dentro_20pct": 66.67,
+    "sesgo_pct": -9.64
+   },
+   "Caudal alto (> Q10 perm.) y subiendo": {
+    "dias": 86.0,
+    "error_tipico_pct": 11.91,
+    "dentro_20pct": 77.91,
+    "sesgo_pct": -12.28
+   },
+   "Caudal alto (> Q10 perm.) sin subida": {
+    "dias": 262.0,
+    "error_tipico_pct": 3.73,
+    "dentro_20pct": 99.24,
+    "sesgo_pct": 1.37
+   }
+  },
+  "variabilidad": {
+   "Estiaje (< Q75 perm.)": {
+    "count": 3278.0,
+    "mean": 0.0753,
+    "std": 0.1417,
+    "min": 0.0,
+    "50%": 0.0352,
+    "90%": 0.1831,
+    "max": 2.6319
+   },
+   "Medios y altos (>= Q75 perm.)": {
+    "count": 7820.0,
+    "mean": 0.0566,
+    "std": 0.0632,
+    "min": 0.0,
+    "50%": 0.0389,
+    "90%": 0.1273,
+    "max": 1.3345
+   }
+  },
+  "qmin7_sen": -1.2847433497536942,
+  "qmin7_p": 0.015235463367108185,
+  "metricas_dominio": {
+   "1": {
+    "dias": 2235,
+    "NSE": 0.9932,
+    "KGE": 0.9944,
+    "Skill_pers": 0.4656,
+    "RMSE_alto": 53.8999
+   },
+   "3": {
+    "dias": 2229,
+    "NSE": 0.9641,
+    "KGE": 0.9702,
+    "Skill_pers": 0.551,
+    "RMSE_alto": 120.123
+   },
+   "5": {
+    "dias": 2223,
+    "NSE": 0.9224,
+    "KGE": 0.9399,
+    "Skill_pers": 0.5721,
+    "RMSE_alto": 172.5284
+   }
+  }
+ },
+ "eventos": [
+  {
+   "fecha": "2013-05-23",
+   "Q_obs": 1218.88,
+   "Q_mod_mismo_dia": 1058.87,
+   "Q_pers_mismo_dia": 899.34,
+   "Q_mod_max_5d": 1353.55,
+   "desfase_mod_dias": 1,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": -13.13,
+   "error_pico_pers_pct": -26.22
+  },
+  {
+   "fecha": "2014-05-09",
+   "Q_obs": 1788.08,
+   "Q_mod_mismo_dia": 1344.61,
+   "Q_pers_mismo_dia": 1344.62,
+   "Q_mod_max_5d": 1657.22,
+   "desfase_mod_dias": 1,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": -24.8,
+   "error_pico_pers_pct": -24.8
+  },
+  {
+   "fecha": "2014-06-06",
+   "Q_obs": 902.19,
+   "Q_mod_mismo_dia": 890.88,
+   "Q_pers_mismo_dia": 804.98,
+   "Q_mod_max_5d": 946.95,
+   "desfase_mod_dias": 2,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": -1.25,
+   "error_pico_pers_pct": -10.78
+  },
+  {
+   "fecha": "2014-07-05",
+   "Q_obs": 1678.34,
+   "Q_mod_mismo_dia": 887.98,
+   "Q_pers_mismo_dia": 874.07,
+   "Q_mod_max_5d": 1868.01,
+   "desfase_mod_dias": 3,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": -47.09,
+   "error_pico_pers_pct": -47.92
+  },
+  {
+   "fecha": "2014-08-08",
+   "Q_obs": 985.85,
+   "Q_mod_mismo_dia": 745.08,
+   "Q_pers_mismo_dia": 746.06,
+   "Q_mod_max_5d": 1058.5,
+   "desfase_mod_dias": 1,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": -24.42,
+   "error_pico_pers_pct": -24.32
+  },
+  {
+   "fecha": "2015-06-03",
+   "Q_obs": 1732.34,
+   "Q_mod_mismo_dia": 1377.46,
+   "Q_pers_mismo_dia": 1387.89,
+   "Q_mod_max_5d": 1635.88,
+   "desfase_mod_dias": 2,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": -20.49,
+   "error_pico_pers_pct": -19.88
+  },
+  {
+   "fecha": "2015-07-30",
+   "Q_obs": 1133.26,
+   "Q_mod_mismo_dia": 990.44,
+   "Q_pers_mismo_dia": 949.08,
+   "Q_mod_max_5d": 1146.97,
+   "desfase_mod_dias": 1,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": -12.6,
+   "error_pico_pers_pct": -16.25
+  },
+  {
+   "fecha": "2015-10-26",
+   "Q_obs": 919.5,
+   "Q_mod_mismo_dia": 515.09,
+   "Q_pers_mismo_dia": 669.9,
+   "Q_mod_max_5d": 1089.06,
+   "desfase_mod_dias": 3,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": -43.98,
+   "error_pico_pers_pct": -27.15
+  },
+  {
+   "fecha": "2015-12-21",
+   "Q_obs": 890.83,
+   "Q_mod_mismo_dia": 914.04,
+   "Q_pers_mismo_dia": 852.2,
+   "Q_mod_max_5d": 944.94,
+   "desfase_mod_dias": 3,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": 2.61,
+   "error_pico_pers_pct": -4.34
+  },
+  {
+   "fecha": "2016-01-11",
+   "Q_obs": 1432.54,
+   "Q_mod_mismo_dia": 1283.89,
+   "Q_pers_mismo_dia": 1270.11,
+   "Q_mod_max_5d": 1405.48,
+   "desfase_mod_dias": 1,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": -10.38,
+   "error_pico_pers_pct": -11.34
+  },
+  {
+   "fecha": "2017-05-09",
+   "Q_obs": 1379.12,
+   "Q_mod_mismo_dia": 1295.47,
+   "Q_pers_mismo_dia": 1319.31,
+   "Q_mod_max_5d": 1326.03,
+   "desfase_mod_dias": 2,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": -6.07,
+   "error_pico_pers_pct": -4.34
+  },
+  {
+   "fecha": "2017-06-11",
+   "Q_obs": 1118.99,
+   "Q_mod_mismo_dia": 1080.2,
+   "Q_pers_mismo_dia": 1011.14,
+   "Q_mod_max_5d": 1152.48,
+   "desfase_mod_dias": 2,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": -3.47,
+   "error_pico_pers_pct": -9.64
+  },
+  {
+   "fecha": "2017-11-18",
+   "Q_obs": 1111.92,
+   "Q_mod_mismo_dia": 1134.29,
+   "Q_pers_mismo_dia": 1177.15,
+   "Q_mod_max_5d": 1153.91,
+   "desfase_mod_dias": 2,
+   "desfase_pers_dias": 0,
+   "error_pico_mod_pct": 2.01,
+   "error_pico_pers_pct": 5.87
+  },
+  {
+   "fecha": "2018-01-29",
+   "Q_obs": 1077.26,
+   "Q_mod_mismo_dia": 1097.03,
+   "Q_pers_mismo_dia": 955.11,
+   "Q_mod_max_5d": 1137.87,
+   "desfase_mod_dias": 2,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": 1.84,
+   "error_pico_pers_pct": -11.34
+  },
+  {
+   "fecha": "2018-11-09",
+   "Q_obs": 1024.03,
+   "Q_mod_mismo_dia": 1052.05,
+   "Q_pers_mismo_dia": 937.14,
+   "Q_mod_max_5d": 1066.59,
+   "desfase_mod_dias": 1,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": 2.74,
+   "error_pico_pers_pct": -8.49
+  },
+  {
+   "fecha": "2018-11-30",
+   "Q_obs": 1162.33,
+   "Q_mod_mismo_dia": 1132.33,
+   "Q_pers_mismo_dia": 1056.98,
+   "Q_mod_max_5d": 1184.56,
+   "desfase_mod_dias": 2,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": -2.58,
+   "error_pico_pers_pct": -9.06
+  },
+  {
+   "fecha": "2019-05-15",
+   "Q_obs": 1605.55,
+   "Q_mod_mismo_dia": 1562.06,
+   "Q_pers_mismo_dia": 1336.13,
+   "Q_mod_max_5d": 1652.15,
+   "desfase_mod_dias": -1,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": -2.71,
+   "error_pico_pers_pct": -16.78
+  },
+  {
+   "fecha": "2022-04-21",
+   "Q_obs": 1414.51,
+   "Q_mod_mismo_dia": 1366.08,
+   "Q_pers_mismo_dia": 1310.98,
+   "Q_mod_max_5d": 1369.6,
+   "desfase_mod_dias": 3,
+   "desfase_pers_dias": 3,
+   "error_pico_mod_pct": -3.42,
+   "error_pico_pers_pct": -7.32
+  }
+ ],
+ "desfase": {
+  "LightGBM h=1": 1,
+  "LightGBM h=3": 1,
+  "LightGBM h=5": 3,
+  "Persistencia h=3": 3
+ },
+ "cobertura": [
+  {
+   "h": 1,
+   "recalibrada": false,
+   "cobertura": 0.825,
+   "cobertura_altos": 0.9394,
+   "ancho_medio": 30.6699,
+   "ancho_rel_medio": 0.1648,
+   "ancho_medio_altos": 108.7329
+  },
+  {
+   "h": 1,
+   "recalibrada": true,
+   "cobertura": 0.9023,
+   "cobertura_altos": 0.9949,
+   "ancho_medio": 46.7613,
+   "ancho_rel_medio": 0.2291,
+   "ancho_medio_altos": 180.3819
+  },
+  {
+   "h": 3,
+   "recalibrada": false,
+   "cobertura": 0.7654,
+   "cobertura_altos": 0.8918,
+   "ancho_medio": 89.1419,
+   "ancho_rel_medio": 0.4781,
+   "ancho_medio_altos": 301.2794
+  },
+  {
+   "h": 3,
+   "recalibrada": true,
+   "cobertura": 0.8784,
+   "cobertura_altos": 0.9845,
+   "ancho_medio": 140.6631,
+   "ancho_rel_medio": 0.6932,
+   "ancho_medio_altos": 526.9932
+  },
+  {
+   "h": 5,
+   "recalibrada": false,
+   "cobertura": 0.7637,
+   "cobertura_altos": 0.8368,
+   "ancho_medio": 145.3944,
+   "ancho_rel_medio": 0.8236,
+   "ancho_medio_altos": 442.09
+  },
+  {
+   "h": 5,
+   "recalibrada": true,
+   "cobertura": 0.8574,
+   "cobertura_altos": 0.9632,
+   "ancho_medio": 221.3969,
+   "ancho_rel_medio": 1.1627,
+   "ancho_medio_altos": 760.2437
+  }
+ ],
+ "qhat": {
+  "1": 0.03183820375835023,
+  "3": 0.09981857655034722,
+  "5": 0.14225730682296267
+ },
+ "alerta": {
+  "umbral": 823.3578,
+  "umbral_prob": {
+   "3": 0.3,
+   "5": 0.1
+  },
+  "por_dia": [
+   {
+    "ventana": 3,
+    "dias": 3293,
+    "dias_con_superacion": 42,
+    "AUC": 0.9896,
+    "BSS": 0.5709,
+    "umbral_prob": 0.3,
+    "Clasificador POD": 0.7381,
+    "Clasificador FAR": 0.2955,
+    "Clasificador CSI": 0.5636,
+    "Regresión central POD": 0.5714,
+    "Regresión central FAR": 0.25,
+    "Regresión central CSI": 0.48,
+    "Regresión P75 POD": 0.619,
+    "Regresión P75 FAR": 0.381,
+    "Regresión P75 CSI": 0.4483
+   },
+   {
+    "ventana": 5,
+    "dias": 3281,
+    "dias_con_superacion": 70,
+    "AUC": 0.9817,
+    "BSS": 0.4766,
+    "umbral_prob": 0.1,
+    "Clasificador POD": 0.8143,
+    "Clasificador FAR": 0.5839,
+    "Clasificador CSI": 0.38,
+    "Regresión central POD": 0.4857,
+    "Regresión central FAR": 0.2609,
+    "Regresión central CSI": 0.4146,
+    "Regresión P75 POD": 0.6143,
+    "Regresión P75 FAR": 0.3768,
+    "Regresión P75 CSI": 0.4479
+   }
+  ],
+  "por_evento": [
+   {
+    "ventana": 3,
+    "metodo": "Regresión (valor central)",
+    "eventos": 14,
+    "detectados": 13,
+    "anticipacion_media": 2.077,
+    "episodios": 18,
+    "falsas_alarmas": 5,
+    "falsas_por_ano": 0.47,
+    "anticipacion": [
+     1,
+     2,
+     2,
+     3,
+     3,
+     2,
+     2,
+     0,
+     3,
+     2,
+     1,
+     1,
+     2,
+     3
+    ],
+    "fechas": [
+     "2013-05-20",
+     "2014-04-18",
+     "2014-06-04",
+     "2014-07-01",
+     "2014-08-06",
+     "2015-05-19",
+     "2015-07-26",
+     "2015-10-26",
+     "2015-12-17",
+     "2017-04-16",
+     "2018-01-25",
+     "2018-11-05",
+     "2019-05-09",
+     "2022-04-14"
+    ]
+   },
+   {
+    "ventana": 3,
+    "metodo": "Regresión (percentil 75)",
+    "eventos": 14,
+    "detectados": 13,
+    "anticipacion_media": 2.154,
+    "episodios": 22,
+    "falsas_alarmas": 9,
+    "falsas_por_ano": 0.846,
+    "anticipacion": [
+     1,
+     2,
+     2,
+     3,
+     3,
+     2,
+     2,
+     0,
+     3,
+     3,
+     1,
+     1,
+     2,
+     3
+    ],
+    "fechas": [
+     "2013-05-20",
+     "2014-04-18",
+     "2014-06-04",
+     "2014-07-01",
+     "2014-08-06",
+     "2015-05-19",
+     "2015-07-26",
+     "2015-10-26",
+     "2015-12-17",
+     "2017-04-16",
+     "2018-01-25",
+     "2018-11-05",
+     "2019-05-09",
+     "2022-04-14"
+    ]
+   },
+   {
+    "ventana": 3,
+    "metodo": "Clasificador (probabilidad)",
+    "eventos": 14,
+    "detectados": 13,
+    "anticipacion_media": 2.538,
+    "episodios": 25,
+    "falsas_alarmas": 10,
+    "falsas_por_ano": 0.94,
+    "anticipacion": [
+     2,
+     3,
+     2,
+     3,
+     3,
+     3,
+     3,
+     0,
+     3,
+     3,
+     1,
+     1,
+     3,
+     3
+    ],
+    "fechas": [
+     "2013-05-20",
+     "2014-04-18",
+     "2014-06-04",
+     "2014-07-01",
+     "2014-08-06",
+     "2015-05-19",
+     "2015-07-26",
+     "2015-10-26",
+     "2015-12-17",
+     "2017-04-16",
+     "2018-01-25",
+     "2018-11-05",
+     "2019-05-09",
+     "2022-04-14"
+    ]
+   },
+   {
+    "ventana": 3,
+    "metodo": "Persistencia de la tendencia",
+    "eventos": 14,
+    "detectados": 13,
+    "anticipacion_media": 2.308,
+    "episodios": 40,
+    "falsas_alarmas": 27,
+    "falsas_por_ano": 2.537,
+    "anticipacion": [
+     2,
+     2,
+     3,
+     2,
+     3,
+     2,
+     2,
+     0,
+     3,
+     3,
+     1,
+     1,
+     3,
+     3
+    ],
+    "fechas": [
+     "2013-05-20",
+     "2014-04-18",
+     "2014-06-04",
+     "2014-07-01",
+     "2014-08-06",
+     "2015-05-19",
+     "2015-07-26",
+     "2015-10-26",
+     "2015-12-17",
+     "2017-04-16",
+     "2018-01-25",
+     "2018-11-05",
+     "2019-05-09",
+     "2022-04-14"
+    ]
+   },
+   {
+    "ventana": 5,
+    "metodo": "Regresión (valor central)",
+    "eventos": 14,
+    "detectados": 13,
+    "anticipacion_media": 3.077,
+    "episodios": 25,
+    "falsas_alarmas": 9,
+    "falsas_por_ano": 0.846,
+    "anticipacion": [
+     5,
+     5,
+     2,
+     4,
+     3,
+     4,
+     2,
+     0,
+     3,
+     3,
+     1,
+     1,
+     3,
+     4
+    ],
+    "fechas": [
+     "2013-05-20",
+     "2014-04-18",
+     "2014-06-04",
+     "2014-07-01",
+     "2014-08-06",
+     "2015-05-19",
+     "2015-07-26",
+     "2015-10-26",
+     "2015-12-17",
+     "2017-04-16",
+     "2018-01-25",
+     "2018-11-05",
+     "2019-05-09",
+     "2022-04-14"
+    ]
+   },
+   {
+    "ventana": 5,
+    "metodo": "Regresión (percentil 75)",
+    "eventos": 14,
+    "detectados": 13,
+    "anticipacion_media": 3.769,
+    "episodios": 30,
+    "falsas_alarmas": 14,
+    "falsas_por_ano": 1.316,
+    "anticipacion": [
+     5,
+     5,
+     4,
+     4,
+     5,
+     4,
+     4,
+     0,
+     3,
+     4,
+     2,
+     2,
+     3,
+     4
+    ],
+    "fechas": [
+     "2013-05-20",
+     "2014-04-18",
+     "2014-06-04",
+     "2014-07-01",
+     "2014-08-06",
+     "2015-05-19",
+     "2015-07-26",
+     "2015-10-26",
+     "2015-12-17",
+     "2017-04-16",
+     "2018-01-25",
+     "2018-11-05",
+     "2019-05-09",
+     "2022-04-14"
+    ]
+   },
+   {
+    "ventana": 5,
+    "metodo": "Clasificador (probabilidad)",
+    "eventos": 14,
+    "detectados": 13,
+    "anticipacion_media": 4.615,
+    "episodios": 42,
+    "falsas_alarmas": 27,
+    "falsas_por_ano": 2.537,
+    "anticipacion": [
+     5,
+     5,
+     5,
+     4,
+     5,
+     4,
+     5,
+     0,
+     5,
+     5,
+     2,
+     5,
+     5,
+     5
+    ],
+    "fechas": [
+     "2013-05-20",
+     "2014-04-18",
+     "2014-06-04",
+     "2014-07-01",
+     "2014-08-06",
+     "2015-05-19",
+     "2015-07-26",
+     "2015-10-26",
+     "2015-12-17",
+     "2017-04-16",
+     "2018-01-25",
+     "2018-11-05",
+     "2019-05-09",
+     "2022-04-14"
+    ]
+   },
+   {
+    "ventana": 5,
+    "metodo": "Persistencia de la tendencia",
+    "eventos": 14,
+    "detectados": 13,
+    "anticipacion_media": 3.769,
+    "episodios": 65,
+    "falsas_alarmas": 48,
+    "falsas_por_ano": 4.51,
+    "anticipacion": [
+     2,
+     5,
+     4,
+     3,
+     5,
+     5,
+     5,
+     0,
+     4,
+     5,
+     2,
+     2,
+     3,
+     4
+    ],
+    "fechas": [
+     "2013-05-20",
+     "2014-04-18",
+     "2014-06-04",
+     "2014-07-01",
+     "2014-08-06",
+     "2015-05-19",
+     "2015-07-26",
+     "2015-10-26",
+     "2015-12-17",
+     "2017-04-16",
+     "2018-01-25",
+     "2018-11-05",
+     "2019-05-09",
+     "2022-04-14"
+    ]
+   }
+  ],
+  "confiabilidad_3": [
+   {
+    "prob_media": 0.0009,
+    "frecuencia_obs": 0.0013,
+    "dias": 3135
+   },
+   {
+    "prob_media": 0.0435,
+    "frecuencia_obs": 0.025,
+    "dias": 80
+   },
+   {
+    "prob_media": 0.1826,
+    "frecuencia_obs": 0.1471,
+    "dias": 34
+   },
+   {
+    "prob_media": 0.37,
+    "frecuencia_obs": 0.4,
+    "dias": 10
+   },
+   {
+    "prob_media": 0.6209,
+    "frecuencia_obs": 0.7143,
+    "dias": 14
+   },
+   {
+    "prob_media": 0.8586,
+    "frecuencia_obs": 0.85,
+    "dias": 20
+   }
+  ]
+ },
+ "shap": {
+  "dlQ_1": 0.07071,
+  "P10": 0.01811,
+  "P7": 0.01668,
+  "lQ_2": 0.01631,
+  "dlQ_3": 0.01486,
+  "lQ_3": 0.01334,
+  "P5": 0.01225,
+  "P15": 0.01005,
+  "lQ_1": 0.00953,
+  "P1": 0.00948,
+  "P3": 0.00665,
+  "lQ_7": 0.00655,
+  "lQ_0": 0.00554,
+  "mes (total)": 0.00494,
+  "P30": 0.00452,
+  "API": 0.00316,
+  "P_lag2": 0.00079,
+  "P_lag1": 0.00044
+ },
+ "roi": {
+  "crecidas_alertadas_por_ano": 1.221571906354515,
+  "falsas_alarmas_por_ano": 0.9396706971957808,
+  "anos": 5,
+  "escenarios": {
+   "Conservador": {
+    "daño evitado por crecida (USD)": 15000,
+    "costo por falsa alarma (USD)": 3000,
+    "implementación (USD)": 12000,
+    "operación anual (USD)": 6000,
+    "beneficio 5 años (USD)": 91617.893,
+    "costo 5 años (USD)": 56095.06,
+    "beneficio neto (USD)": 35522.833,
+    "ROI": 0.633
+   },
+   "Base": {
+    "daño evitado por crecida (USD)": 40000,
+    "costo por falsa alarma (USD)": 2000,
+    "implementación (USD)": 12000,
+    "operación anual (USD)": 4000,
+    "beneficio 5 años (USD)": 244314.381,
+    "costo 5 años (USD)": 41396.707,
+    "beneficio neto (USD)": 202917.674,
+    "ROI": 4.902
+   },
+   "Optimista": {
+    "daño evitado por crecida (USD)": 80000,
+    "costo por falsa alarma (USD)": 1000,
+    "implementación (USD)": 12000,
+    "operación anual (USD)": 3000,
+    "beneficio 5 años (USD)": 488628.763,
+    "costo 5 años (USD)": 31698.353,
+    "beneficio neto (USD)": 456930.409,
+    "ROI": 14.415
+   }
+  }
+ },
+ "persistencia": {
+  "1": {
+   "NSE": 0.9918,
+   "KGE": 0.9959,
+   "RMSE": 30.3919,
+   "RMSE_alto": 69.3908
+  },
+  "3": {
+   "NSE": 0.9477,
+   "KGE": 0.9739,
+   "RMSE": 76.8518,
+   "RMSE_alto": 172.4009
+  },
+  "5": {
+   "NSE": 0.8782,
+   "KGE": 0.9392,
+   "RMSE": 117.2397,
+   "RMSE_alto": 261.9167
+  }
+ },
+ "comparacion": [
+  {
+   "h": 1,
+   "modelo": "Ridge",
+   "NSE": 0.9951,
+   "KGE": 0.996,
+   "Skill_pers": 0.4023,
+   "RMSE": 23.4962,
+   "RMSE_alto": 56.4004,
+   "PBIAS_alto": -0.0186
+  },
+  {
+   "h": 1,
+   "modelo": "Random Forest",
+   "NSE": 0.9952,
+   "KGE": 0.997,
+   "Skill_pers": 0.4067,
+   "RMSE": 23.4094,
+   "RMSE_alto": 56.9076,
+   "PBIAS_alto": -0.3608
+  },
+  {
+   "h": 1,
+   "modelo": "XGBoost",
+   "NSE": 0.9956,
+   "KGE": 0.9957,
+   "Skill_pers": 0.4581,
+   "RMSE": 22.3732,
+   "RMSE_alto": 53.9532,
+   "PBIAS_alto": -0.6466
+  },
+  {
+   "h": 1,
+   "modelo": "LightGBM",
+   "NSE": 0.9956,
+   "KGE": 0.9954,
+   "Skill_pers": 0.4597,
+   "RMSE": 22.3401,
+   "RMSE_alto": 53.9,
+   "PBIAS_alto": -0.7709
+  },
+  {
+   "h": 3,
+   "modelo": "Ridge",
+   "NSE": 0.9691,
+   "KGE": 0.9808,
+   "Skill_pers": 0.4091,
+   "RMSE": 59.0782,
+   "RMSE_alto": 136.177,
+   "PBIAS_alto": 0.0107
+  },
+  {
+   "h": 3,
+   "modelo": "Random Forest",
+   "NSE": 0.9757,
+   "KGE": 0.9812,
+   "Skill_pers": 0.5352,
+   "RMSE": 52.3928,
+   "RMSE_alto": 121.6476,
+   "PBIAS_alto": -2.3605
+  },
+  {
+   "h": 3,
+   "modelo": "XGBoost",
+   "NSE": 0.9761,
+   "KGE": 0.9796,
+   "Skill_pers": 0.5419,
+   "RMSE": 52.0163,
+   "RMSE_alto": 120.7645,
+   "PBIAS_alto": -2.5801
+  },
+  {
+   "h": 3,
+   "modelo": "LightGBM",
+   "NSE": 0.9757,
+   "KGE": 0.9798,
+   "Skill_pers": 0.5357,
+   "RMSE": 52.3693,
+   "RMSE_alto": 123.1555,
+   "PBIAS_alto": -2.6711
+  },
+  {
+   "h": 5,
+   "modelo": "Ridge",
+   "NSE": 0.9276,
+   "KGE": 0.9604,
+   "Skill_pers": 0.4056,
+   "RMSE": 90.3921,
+   "RMSE_alto": 209.9161,
+   "PBIAS_alto": -0.2178
+  },
+  {
+   "h": 5,
+   "modelo": "Random Forest",
+   "NSE": 0.9444,
+   "KGE": 0.9566,
+   "Skill_pers": 0.5438,
+   "RMSE": 79.1856,
+   "RMSE_alto": 181.0039,
+   "PBIAS_alto": -4.6013
+  },
+  {
+   "h": 5,
+   "modelo": "XGBoost",
+   "NSE": 0.9469,
+   "KGE": 0.9555,
+   "Skill_pers": 0.5639,
+   "RMSE": 77.4233,
+   "RMSE_alto": 172.8621,
+   "PBIAS_alto": -4.869
+  },
+  {
+   "h": 5,
+   "modelo": "LightGBM",
+   "NSE": 0.9467,
+   "KGE": 0.9572,
+   "Skill_pers": 0.5628,
+   "RMSE": 77.519,
+   "RMSE_alto": 172.4734,
+   "PBIAS_alto": -4.8233
+  }
+ ],
+ "ponderacion": {
+  "Peso 3 a Q > Q90: False": {
+   "NSE": 0.9757,
+   "KGE": 0.9758,
+   "Skill_pers": 0.5343,
+   "RMSE": 52.4474,
+   "RMSE_alto": 125.41,
+   "PBIAS_alto": -2.9585
+  },
+  "Peso 3 a Q > Q90: True": {
+   "NSE": 0.9757,
+   "KGE": 0.9798,
+   "Skill_pers": 0.5357,
+   "RMSE": 52.3693,
+   "RMSE_alto": 123.1555,
+   "PBIAS_alto": -2.6711
+  }
+ },
+ "ablacion_skill": {
+  "Q": {
+   "1": 0.372,
+   "3": 0.4205,
+   "5": 0.3883
+  },
+  "Q+P1": {
+   "1": 0.3995,
+   "3": 0.444,
+   "5": 0.4326
+  },
+  "Q+P3": {
+   "1": 0.3817,
+   "3": 0.4475,
+   "5": 0.4585
+  },
+  "Q+P5": {
+   "1": 0.403,
+   "3": 0.4857,
+   "5": 0.5077
+  },
+  "Q+P7": {
+   "1": 0.4219,
+   "3": 0.5335,
+   "5": 0.5361
+  },
+  "Q+P10": {
+   "1": 0.4211,
+   "3": 0.5281,
+   "5": 0.5235
+  },
+  "Q+P15": {
+   "1": 0.4405,
+   "3": 0.5231,
+   "5": 0.5122
+  },
+  "Q+P30": {
+   "1": 0.3911,
+   "3": 0.4533,
+   "5": 0.424
+  },
+  "Q+todas": {
+   "1": 0.4597,
+   "3": 0.5357,
+   "5": 0.5628
+  }
+ },
+ "ganancia": {
+  "Q+P1": {
+   "1": 0.0275,
+   "3": 0.0235,
+   "5": 0.0443
+  },
+  "Q+P3": {
+   "1": 0.0097,
+   "3": 0.027,
+   "5": 0.0702
+  },
+  "Q+P5": {
+   "1": 0.031,
+   "3": 0.0652,
+   "5": 0.1194
+  },
+  "Q+P7": {
+   "1": 0.0499,
+   "3": 0.113,
+   "5": 0.1478
+  },
+  "Q+P10": {
+   "1": 0.0491,
+   "3": 0.1077,
+   "5": 0.1352
+  },
+  "Q+P15": {
+   "1": 0.0685,
+   "3": 0.1026,
+   "5": 0.1239
+  },
+  "Q+P30": {
+   "1": 0.0191,
+   "3": 0.0328,
+   "5": 0.0357
+  },
+  "Q+todas": {
+   "1": 0.0877,
+   "3": 0.1152,
+   "5": 0.1745
+  }
+ },
+ "optimizacion": {
+  "mejores": {
+   "subsample": 0.7,
+   "reg_lambda": 5,
+   "num_leaves": 15,
+   "n_estimators": 200,
+   "min_child_samples": 10,
+   "learning_rate": 0.02,
+   "colsample_bytree": 0.6
+  },
+  "tuned": {
+   "NSE": 0.9760953579833497,
+   "KGE": 0.9833040493129436,
+   "Skill_pers": 0.5427552819227821,
+   "RMSE": 51.967083029783055,
+   "RMSE_alto": 120.12300569057923,
+   "PBIAS_alto": -2.1541334085952455
+  },
+  "defecto": {
+   "NSE": 0.9757,
+   "KGE": 0.9798,
+   "Skill_pers": 0.5357,
+   "RMSE": 52.3693,
+   "RMSE_alto": 123.1555,
+   "PBIAS_alto": -2.6711
+  }
+ },
+ "general": {
+  "Q90": 823.3578,
+  "area_km2": 20986.761900171387,
+  "pesos": {
+   "Paraguari": 0.0263,
+   "Villarrica": 0.1448,
+   "Coronel_Oviedo": 0.0664,
+   "Quyquyho": 0.1622,
+   "Pilar": 0.0,
+   "San_Juan_Bautista": 0.113,
+   "Caazapa": 0.4219,
+   "Encarnacion": 0.0653
+  },
+  "combinaciones": 50,
+  "Pmed_anual": 1668.0575729973884,
+  "corr_retardo": [
+   0.09172317375206356,
+   0.2115858459780993,
+   0.19047972798239704,
+   0.17297915962374164,
+   0.17291719915980872,
+   0.155999080867951,
+   0.1400699733938602,
+   0.1286517966297611,
+   0.10734181974742599,
+   0.0820255655695246,
+   0.05017288697354281,
+   0.03746729418485311
+  ],
+  "n_train": 7381,
+  "n_test": 3644,
+  "t_pico": "2014-05-09",
+  "evento_eval": "2019-05-15"
+ }
+}

@@ -1,0 +1,137 @@
+[
+ {
+  "n": 1,
+  "bloque": "Bloque 1 · Problema",
+  "titulo": "Portada",
+  "tiempo": "0:00 – 0:15",
+  "seg": 15,
+  "decir": "Buenas tardes. Este proyecto pronostica el caudal del río Tebicuary en Villa Florida a uno, tres y cinco días, con intervalos de confianza, y alerta las crecidas con varios días de margen, usando machine learning.",
+  "video": "Diapositiva de portada (o cámara)."
+ },
+ {
+  "n": 2,
+  "bloque": "Bloque 1 · Problema",
+  "titulo": "Qué problema se resuelve y para quién",
+  "tiempo": "0:15 – 0:50",
+  "seg": 35,
+  "decir": "El Tebicuary drena casi veintiún mil kilómetros cuadrados. En Villa Florida cruza la ruta PY01, y sus crecidas afectan la ruta, la producción y a las poblaciones ribereñas. Hoy se anticipan solo con la lectura diaria de la estación. El sistema es para los organismos de gestión de riesgo y para los proyectistas viales e hidráulicos. Como umbral de crecida se usa el caudal de diez por ciento de permanencia: 823 metros cúbicos por segundo.",
+  "video": "Diapositiva 2."
+ },
+ {
+  "n": 3,
+  "bloque": "Bloque 1 · Problema",
+  "titulo": "Por qué machine learning",
+  "tiempo": "0:50 – 1:20",
+  "seg": 30,
+  "decir": "La respuesta del río a la lluvia no es lineal: la misma lluvia produce crecidas distintas según la humedad del suelo. El machine learning aprende esas relaciones de cincuenta años de registros. Los datos son tabulares, y ahí el boosting es el estado del arte. También se probó una red neuronal de deep learning: no mejoró la precisión, 0,47 frente a 0,54.",
+  "video": "Diapositiva 3."
+ },
+ {
+  "n": 4,
+  "bloque": "Bloque 1 · Problema",
+  "titulo": "Métrica de éxito",
+  "tiempo": "1:20 – 1:50",
+  "seg": 30,
+  "decir": "La métrica de éxito es el skill frente a la persistencia, que supone que mañana el caudal será igual que hoy. En un río lento la persistencia ya da un NSE de 0,99, así que un NSE alto no prueba nada. El skill mide cuánto de su error elimina el modelo. Para la alerta, el éxito es detectar las crecidas con anticipación y pocas falsas alarmas.",
+  "video": "Diapositiva 4."
+ },
+ {
+  "n": 5,
+  "bloque": "Bloque 2 · Código",
+  "titulo": "Repositorio en GitHub",
+  "tiempo": "1:50 – 2:15",
+  "seg": 25,
+  "decir": "Este es el repositorio. En la raíz están el README, el notebook final, el modelo entrenado model.pkl, la aplicación app.py, los datos de muestra y los requisitos. La carpeta data tiene los datos crudos, figuras y resultados tienen las salidas del notebook, docs tiene la memoria de cálculo y la presentación, y analisis_complementarios guarda las pruebas que se descartaron.",
+  "video": "GitHub: página principal del repositorio, recorrer las carpetas con el cursor; abrir el README un instante."
+ },
+ {
+  "n": 6,
+  "bloque": "Bloque 2 · Código",
+  "titulo": "Carga y limpieza de datos",
+  "tiempo": "2:15 – 2:50",
+  "seg": 35,
+  "decir": "El notebook empieza con la carga de datos: ocho pluviómetros y el caudal diario de 1974 a 2023. Hay tres pasos de limpieza. El valor menos uno es sin dato, y se trata como faltante, no como cero. Las series de Quyquyho y Caazapá eran idénticas hasta 2016, así que Caazapá se trata como faltante en ese período. Y la lluvia media de la cuenca se calcula con polígonos de Thiessen que se recalculan cada día con las estaciones que midieron.",
+  "video": "Notebook, sección 2 (función leer_serie y tabla de faltantes) y sección 3 (mapa de Thiessen)."
+ },
+ {
+  "n": 7,
+  "bloque": "Bloque 2 · Código",
+  "titulo": "Preprocesamiento: ColumnTransformer + Pipeline",
+  "tiempo": "2:50 – 3:35",
+  "seg": 45,
+  "decir": "Con la serie diaria se arman dieciocho variables: el caudal de los últimos días, su tendencia, la lluvia acumulada de uno a treinta días, la humedad antecedente y el mes. El objetivo es el cambio relativo del caudal en logaritmo. Esta es la función crear_pipeline: un ColumnTransformer completa los faltantes con la mediana y estandariza las numéricas, y codifica el mes con One-Hot; después va el modelo. Todo es un único Pipeline que se ajusta solo con 1974 a 2002 y se aplica igual en el test y en la app, sin fuga de información.",
+  "video": "Notebook, sección 5 (construir_features) y sección 6 (crear_pipeline); mostrar el diagrama del pipeline."
+ },
+ {
+  "n": 8,
+  "bloque": "Bloque 2 · Código",
+  "titulo": "Modelo entrenado",
+  "tiempo": "3:35 – 4:00",
+  "seg": 25,
+  "decir": "Se compararon cuatro modelos con el mismo pipeline: Ridge, Random Forest, XGBoost y LightGBM. Los de boosting ganan y empatan entre sí; se eligió LightGBM. Sus hiperparámetros se buscaron con RandomizedSearchCV y TimeSeriesSplit, siempre validando hacia adelante en el tiempo. Se entrena un modelo por horizonte: uno, tres y cinco días.",
+  "video": "Notebook, sección 8 (gráfico de comparación), sección 9 (RandomizedSearchCV) y sección 10 (bucle de modelos finales)."
+ },
+ {
+  "n": 9,
+  "bloque": "Bloque 2 · Código",
+  "titulo": "Evaluación sobre test",
+  "tiempo": "4:00 – 4:35",
+  "seg": 35,
+  "decir": "La evaluación usa 2013 a 2023, años que el modelo nunca vio. El modelo elimina el 46, 54 y 56 por ciento del error de la persistencia a uno, tres y cinco días. En caudales medios y altos el error típico es de dos, cinco y diez por ciento. En las subidas se queda corto y llega con un día de atraso, y los estiajes, por debajo de 112, no se pronostican porque son más variables.",
+  "video": "Notebook, sección 10 (tabla de métricas) y sección 11 (hidrograma del test)."
+ },
+ {
+  "n": 10,
+  "bloque": "Bloque 2 · Código",
+  "titulo": "Intervalos de confianza",
+  "tiempo": "4:35 – 4:50",
+  "seg": 15,
+  "decir": "Cada pronóstico tiene un intervalo del noventa por ciento, con regresión cuantílica recalibrada. En 2016 a 2023 contiene el 90, 88 y 86 por ciento de los caudales observados.",
+  "video": "Notebook, sección 14 (tabla de cobertura y gráfico de la crecida de 2019)."
+ },
+ {
+  "n": 11,
+  "bloque": "Bloque 2 · Código",
+  "titulo": "Alerta de crecidas",
+  "tiempo": "4:50 – 5:25",
+  "seg": 35,
+  "decir": "Para la alerta hay dos niveles: un aviso temprano a cinco días si algún pronóstico supera 823, y una alerta a tres días con un clasificador que estima la probabilidad. En el test hubo catorce crecidas y se alertaron trece, con dos a tres días de anticipación y menos de una falsa alarma por año.",
+  "video": "Notebook, sección 15 (tabla por evento y gráfico de probabilidad de 2019)."
+ },
+ {
+  "n": 12,
+  "bloque": "Bloque 2 · Código",
+  "titulo": "El modelo cargándose e infiriendo",
+  "tiempo": "5:25 – 5:45",
+  "seg": 20,
+  "decir": "El modelo se guarda en model.pkl con joblib. En esta celda se vuelve a cargar y se hace una inferencia real: con datos del 7 de mayo de 2019 pronostica 756, 877 y 974, y 65 por ciento de probabilidad de crecida.",
+  "video": "Notebook, sección 18: ejecutar la celda de joblib.load y mostrar la salida impresa."
+ },
+ {
+  "n": 13,
+  "bloque": "Bloque 3 · Demo",
+  "titulo": "App funcionando con datos reales",
+  "tiempo": "5:45 – 7:55",
+  "seg": 130,
+  "decir": "Ahora la aplicación. Se abre con streamlit run app.py. Se carga un archivo diario con fecha, lluvia media y caudal; aquí uso datos reales de la crecida de mayo de 2019. Elijo el 7 de mayo: el río estaba en 674. La app pronostica 756 para el día siguiente, 877 a tres días y 974 a cinco, cada uno con su intervalo. El aviso temprano está activo y la probabilidad de superar 823 en tres días es 65 por ciento: alerta. Lo observado después confirma: el 9 de mayo el río pasó 823 y siguió subiendo. Si agrego lluvia con este control, el pronóstico sube: el modelo responde a la lluvia. En la pestaña Modelo está la comparación y la importancia de las variables, y en Alcance, dónde confiar en el pronóstico. Si elijo un día de estiaje, la app avisa que está fuera del alcance.",
+  "video": "App en vivo: cargar datos_muestra.csv, fecha 2019-05-07, señalar métricas y alerta; mover el control de lluvia; pasar por las pestañas Modelo y Alcance; elegir 2019-04-10 para mostrar el estiaje."
+ },
+ {
+  "n": 14,
+  "bloque": "Bloque 3 · Demo",
+  "titulo": "ROI en tres escenarios",
+  "tiempo": "7:55 – 9:00",
+  "seg": 65,
+  "decir": "El retorno de la inversión se calculó en tres escenarios a cinco años. El beneficio son los daños evitados en las crecidas alertadas, alrededor de 1,2 por año, y el costo es la implementación, la operación y las falsas alarmas. Con supuestos de referencia, el ROI es 0,6 en el escenario conservador, 4,9 en el base y 14,4 en el optimista: positivo en los tres, porque la operación usa los datos que la red ya produce. Los montos deben ajustarse con la autoridad de gestión de riesgo.",
+  "video": "Diapositiva de ROI (o notebook, sección 17)."
+ },
+ {
+  "n": 15,
+  "bloque": "Bloque 3 · Demo",
+  "titulo": "Próximos pasos",
+  "tiempo": "9:00 – 9:45",
+  "seg": 45,
+  "decir": "Para cerrar, tres próximos pasos. Primero, medir el caudal del Tebicuary-mí y del Pirapó, de donde llega la mayor parte de las crecidas y del atraso. Segundo, definir con la autoridad los umbrales oficiales de alerta. Tercero, recalibrar los intervalos y la alerta cada año. Muchas gracias.",
+  "video": "Diapositiva final."
+ }
+]
